@@ -5,7 +5,6 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    overflow-x: hidden;
 }
 
 .navbar {
@@ -437,6 +436,9 @@ footer {
 }
 
 @media screen and (max-width:600px) {
+    .body {
+        overflow-x: hidden;
+    }
     .navbar-menu-toggle {
         display: block;
     }
