@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trendify.in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="icons8-peace-symbol-48.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css"
+    integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Trendify</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="index.html">New Arrivals</a></p>
+            <p class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact Us</a></p>
+        </div>
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i style="font-size: large;color: white;" class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closeNavbar()">
+            <i style="font-size: large;" class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="#newarrivals">New Arrivals</a></p>
+            <p class="side-navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contact Us</a></p>
+        </div>
+    </div>
+    <div class="header">
+        <div>
+            <h1>Wear it feel it</h1>
+            <p>with our Trendy collections</p>
+            <button class="header-button" onclick="goToNextPage()">Shop Now</button>
+        </div>
+        <div>
+            <img class="header-img" src="collgimg.jpg"
+            style="height: 300px; width: 300px; border: 2px solid purple; border-radius: 8px;">
+        </div>
+    </div>
+    <div class="title">
+        <h2>Trendify</h2>
+    </div></br>
+    <div class="service">
+        <div class="service-container-1">
+            <div>
+                <h2>We Provide Best</h2>
+                <h2>Customer Experience</h2></br>
+            </div>
+            <div>
+                <p>|| we ensure thath our customer have the best shopping experience</p>
+            </div>
+        </div>
+        <div class="service-container-2">
+            <div>
+                <i class="fa-solid fa-peace"></i>
+                <h4>Convenience and Time-Saving</h4>
+                <p>Online dress shopping offers unparalled convenience and time-saving benefits for the customer.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-peace"></i>
+                <h4>Access to Global Fashion Trends</h4>
+                <p>Online dress shopping platforms provide customers with access to global fashion with trends.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-peace"></i>
+                <h4>Wide Selection and Varieties of dresses</h4>
+                <p>Online dress shopping platforms offer an incredibly wide selection of dresses with good quality.</p>
+            </div>
+        </div>
+    </div></br></br></br>
+    <marquee behavior="scroll" direction="right">
+        <h2 style="font-size: x-large; color: purple;">Have a peaceful &#9774;nline sh&#9774;pping experience&#128578;!!!</h2>
+    </marquee>
+    </br></br></br>
+    <section id="newarrivals">
+        <h2 style="text-align: center; font-size:xx-large;">New Arrivals</h2></br>
+        <div class="newarrivals">
+            <div class="newarrivals-container">
+                <img src="shirt1.jpg" alt="Stylish Shirt">
+                <h3>&#10032;Stylish Shirt&#10032;</h3>
+                <p>Price:-50% &#8377;499</p>
+                <p>M.R.P: &#8377; <s>999</s></p>
+                <button onclick="buyNow(1, 'Stylish Shirt', 'shirt1.jpg', 25)">Buy Now</button>
+            </div>
+            <div class="newarrivals-container">
+                <img src="hoodie1.jpg" alt="Trendy Hoodie ">
+                <h3>&#10032;Trendy Hoodie&#10032;</h3>
+                <p>Price:-30% &#8377;899</p>
+                <p>M.R.P: &#8377; <s>1199</s></p>
+                <button onclick="buyNow(2,'Trendy Hoodie ', 'hoodie1.jpg', 25)">Buy Now</button>
+            </div>
+            <div class="newarrivals-container">
+                <img src="hoodie2.jpg" alt="Trendy Hoodie ">
+                <h3>&#10032;Trendy Hoodie&#10032;</h3>
+                <p>Price:-30% &#8377;899</p>
+                <p>M.R.P: &#8377; <s>1199</s></p>
+                <button onclick="buyNow('Trendy Hoodie ', 'hoodie2.jpg', 25)">Buy Now</button>
+            </div>
+            <div class="newarrivals-container">
+                <img src="jeans1.jpg" alt="Fashion Jeans">
+                <h3>&#10032;Fashion Jeans&#10032;</h3>
+                <p>Price:-50% &#8377;1099</p>
+                <p>M.R.P: &#8377; <s>2049</s></p>
+                <button onclick="buyNow('Fashion Jeans', 'jeans1.jpg', 25)">Buy Now</button>
+            </div>
+            <div class="newarrivals-container">
+                <img src="tshirt1.jpg" alt="Tshirt">
+                <h3>&#10032;T-Shirt&#10032;</h3>
+                <p>Price:-40% &#8377;399</p>
+                <p>M.R.P: &#8377; <s>849</s></p>
+                <button onclick="buyNow('Tshirt', 'tshirt1.jpg', 25)">Buy Now</button>
+            </div>
+    </section>
+    </br></br>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo"></br>
+                <h2>Trendify</h2>
+                <o>Style is a way to say who you are without having to speak.</o>
+            </div>
+            <div class="footer-social"></br>
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&#169; 2023 Trendify. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="collection.js"></script>
+</body>
+
+</html>
