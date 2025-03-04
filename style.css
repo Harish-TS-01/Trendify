@@ -112,7 +112,7 @@ nav .navbar-links input[type="text"]:focus {
 }
 .title h2 {
     font-size: 100px;
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: 3px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -415,6 +415,5 @@ footer {
     }
     .title h2 {
         font-size: 50px;
-        font-weight: 200;
     }
 }
