@@ -467,4 +467,7 @@ footer {
     .contact-image img {
         max-width: 50%;
     }
+    .title {
+        display: none;
+    }
 }
