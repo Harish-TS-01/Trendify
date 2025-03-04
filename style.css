@@ -112,7 +112,7 @@ nav .navbar-links input[type="text"]:focus {
 }
 .title h2 {
     font-size: 100px;
-    font-weight: 800;
+    font-weight: 300;
     letter-spacing: 3px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -466,8 +466,5 @@ footer {
 
     .contact-image img {
         max-width: 50%;
-    }
-    .title {
-        display: none;
     }
 }
