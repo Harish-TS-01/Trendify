@@ -413,4 +413,7 @@ footer {
     .contact-image img {
         max-width: 50%;
     }
+    .title h2 {
+        font-weight: 200;
+    }
 }
